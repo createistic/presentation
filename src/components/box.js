@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <span>Team Createistic 🏝</span>
         ⬅️ {index + 1}/{length} ➡️
         <span>
-          @2020
+          ©nomadsprint 2020
           {/* <img style={{ height: 50 }} src={logo} /> */}
         </span>
       </Footer>
