@@ -1,13 +1,13 @@
 import React from "react";
 import arch from "../images/architecture.png";
-
-//  const reelStyle = { margin: "0 auto", width: "60%", height: "60%" };
-// const imgStyle = { objectFit: "contain", width: "100%", height: "100%" };
+import persona from "../images/persona.png";
+import logo from "../images/logo-garlic.png";
 
 const CustomImage = ({ name }) => {
+  const imgSrc = name === "persona" ? persona : name === "logo" ? logo : arch;
   return (
     <div>
-      <img alt={name} src={arch} />
+      <img alt={name} src={imgSrc} />
     </div>
   );
 };

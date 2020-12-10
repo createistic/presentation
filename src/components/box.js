@@ -32,14 +32,22 @@ const Layout = ({ children }) => {
   const { index, length } = useDeck();
   return (
     <>
+      <div
+        style={{
+          fontSize: "0.65em",
+          marginTop: 10,
+          backgroundColor: "rgba(255, 255, 255, 0.55)",
+          width: "80%",
+          textAlign: "center",
+        }}
+      >
+        Please use keyboard arrows to navigate
+      </div>
       <Wrapper>{children}</Wrapper>
       <Footer>
         <span>Team Createistic 🏝</span>
         ⬅️ {index + 1}/{length} ➡️
-        <span>
-          ©nomadsprint 2020
-          {/* <img style={{ height: 50 }} src={logo} /> */}
-        </span>
+        <span>©NomadSprint 2020</span>
       </Footer>
     </>
   );
